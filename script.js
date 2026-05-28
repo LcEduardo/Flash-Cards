@@ -58,4 +58,27 @@ function prevCard() {
     }
 }
 
+function openModal() {
+    document.getElementById('modal-overlay').classList.add('open');
+    document.getElementById('input-question').focus();
+}
+
+function closeModal() {
+    document.getElementById('modal-overlay').classList.remove('open');
+    document.getElementById('input-question').value = '';
+    document.getElementById('input-answer').value = '';
+}
+
+function addCard() {
+    const question = document.getElementById('input-question').value.trim();
+    const answer = document.getElementById('input-answer').value.trim();
+
+    if (!question || !answer) return;
+
+    cards.push({ question, answer });
+    closeModal();
+    current = cards.length - 1;
+    loadCard(current);
+}
+
 loadCard(current);

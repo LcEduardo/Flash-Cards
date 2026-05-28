@@ -169,3 +169,120 @@ h1 {
     color: #888;
     cursor: not-allowed;
 }
+
+/* Add card button */
+#btn-add {
+    margin-top: 24px;
+    padding: 10px 28px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    background-color: #fff;
+    color: #111;
+    border: 1.5px dashed #aaa;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+#btn-add:hover {
+    background-color: #eaeaea;
+    border-color: #555;
+}
+
+/* Modal */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-overlay.open {
+    display: flex;
+}
+
+.modal {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    width: 100%;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+.modal h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.modal label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.modal textarea {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    outline: none;
+    transition: border-color 0.2s;
+    color: #111;
+}
+
+.modal textarea:focus {
+    border-color: #111;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.btn-cancel {
+    padding: 9px 22px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #fff;
+    color: #555;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-cancel:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-confirm {
+    padding: 9px 22px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-confirm:hover {
+    background-color: #333;
+}
