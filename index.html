@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Flash Cards</h1>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <p class="progress-label" id="progress-label">1 / 3</p>
+
+        <div class="card-wrapper">
+            <div class="card" id="card">
+                <div class="card-face card-front">
+                    <span class="tag">Pergunta</span>
+                    <p id="question-text"></p>
+                </div>
+                <div class="card-face card-back">
+                    <span class="tag">Resposta</span>
+                    <p id="answer-text"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="btn-show" onclick="showAnswer()">Ver Resposta</button>
+        </div>
+
+        <div class="navigation">
+            <button id="btn-prev" onclick="prevCard()" disabled>&#8592; Anterior</button>
+            <button id="btn-next" onclick="nextCard()">Próximo &#8594;</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
