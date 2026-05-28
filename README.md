@@ -1,1 +1,1 @@
-[link to website](https://lceduardo.github.io/Flash-Cards/)
+https://lceduardo.github.io/Flash-Cards/
